@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tick Tack Toe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="author" content="Tudor Maerean"/>
+	<meta charset="UTF8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css"/>
+
+  <script src="logic.js"></script>
+  
+  <script type="text/template" id="block_template">
+		<div class="block"><div class="blockText"></div></div>
+	</script>
+</head>
+
+<body>
+  <canvas id = "canvasDiv"></canvas>
+  <div id="gameTitle">Tic-Tac-Toe</div>
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <input id="columnsInput" type="text" class="form-control" placeholder="Number of columns...">
+      </div>
+      <button id="setButton" type="button" class="btn btn-primary col-sm-3">Set</button>
+			<button id = "newGame" class = "btn btn-warning col-sm-3">New Game</button>
+    </div>
+  </div>
+  <div class="col-sm-12 text-center">
+	  <h1 id ="displayCurrentPlayer" class="label label-info"></h1>
+  </div>
+  <div id="gameArea">
+	</div>
+  <h1 class="col-sm-12 text-center" id="gameResult"></h1>
+</body>

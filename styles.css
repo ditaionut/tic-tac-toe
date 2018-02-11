@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+
+.block {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  background-color: #fff;
+  float: left;
+  border: 2px solid #000;
+}
+
+.block:hover {
+  box-shadow: #333 0px 0px 6px 0px;
+}
+
+.blockText {
+  text-align: center;
+  font-size: 2em;
+}
+
+#gameArea {
+  margin: 0px auto
+  margin-top: 40px;
+  display: block;
+}
+
+#gameTitle {
+  display: block;
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.inputDiv {
+  margin: 0 auto;
+  display: block;
+}
+
+#newGame {
+  float:right;
+}
+
+.winningBlock {
+	border: 2px solid red;
+}
+
+#canvasDiv {
+	top: 0;
+	left: 0;
+	position: absolute;
+/*	border: 1px solid black;*/
+}
+/*
+#displayCurrentPlayer {
+    padding: 3px 0 0 8px;
+    margin: 10px;
+    float: left; 
+    font-size: large;
+    background-color: indianred;
+    color: white;
+    width:120px;
+    height: 30px;
+    border-radius: 10px;
+}*/
